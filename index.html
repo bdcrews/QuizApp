@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="floatgrid.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header class="dark_background">
+      <h1>Astronomy Quiz</h1>
+    </header>
+    
+    <section class="js_intro-screen intro-screen dark_background">
+      <p>Please click the Begin button to start this short astronomy quiz.</p>
+    </section>
+    
+    <section class="js-questions-and-answer"></section>
+    
+    <section class="js-results-screen">
+      <h2>Results</h2>
+      <div class="js-results-score results-score dark_background"></div>
+      <div class="js-results-table"></div>
+    </section>
+    
+    <nav class="dark_background">
+      <div class="js-status-progress status_container"></div>
+      <div class="js-status-score status_container"></div>
+      <div class="js-nav-button nav-button button">
+        Begin
+      </div>
+    </nav>
+        
+    <div class="hidden">
+      <div id="results-template">
+        <div class="result_container js_result_container dark_background">
+          <h3 class="js-result-question"> </h3>
+          <p class="js-result-correct-answer"></p>
+          <p class="js-result-user-answer"></p>
+        </div>
+      </div>
+    </div>
+        
+    <div class="hidden">
+      <h2>Results</h2>
+      <div id="question-answer-template">
+        <div class="row">
+          <div class="col-12">
+            <div class="js-quiz-question quiz-question dark_background"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="js-answer-1 button"></div>
+          </div>
+          <div class="col-6">
+            <div class="js-answer-2 button"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="js-answer-3 button"></div>
+          </div>
+          <div class="col-6">
+            <div class="js-answer-4 button"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="js-interesting-fact interesting-fact"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
